@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дни рждения 328веб</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Дни рождения 328</h1>
+            <div>
+                <label for="sort-select">Сортировать по:</label>
+                <select id="sort-select" onchange="sortList()">
+                    <option value="name">Имени</option>
+                    <option value="days">Дням до дня рождения</option>
+                </select>
+            </div>
+            <ul id="birthday-list">
+                <!-- JavaScript will populate this list -->
+            </ul>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+    </body>
+</html>

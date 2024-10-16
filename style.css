@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    background-color: #ececec;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.name {
+    font-weight: bold;
+}
+.days-left {
+    color: #007bff;
+}
+/* Стили для контейнера выпадающего списка */
+.container select {
+    padding: 4px 10px; /* Внутренние отступы */
+    border: 2px solid #4CAF50; /* Граница выпадающего списка */
+    border-radius: 8px; /* Округлые углы */
+    background-color: #f9f9f9; /* Цвет фона */
+    color: #333; /* Цвет текста */
+    font-size: 16px; /* Размер шрифта */
+    outline: none; /* Убираем рамку при фокусе */
+    cursor: pointer; /* Указываем, что элемент кликабельный */
+    transition: border-color 0.3s ease; /* Плавный переход для изменения цвета границы */
+}
+
+/* Стили для выпадающих опций */
+.container select option {
+    background-color: #fff; /* Фон опций */
+    color: #333; /* Цвет текста */
+}
+
+/* Стили при наведении на выпадающий список */
+.container select:hover {
+    border-color: #45a049; /* Изменение цвета границы при наведении */
+}
+
+/* Стили при фокусе */
+.container select:focus {
+    border-color: #45a049; /* Цвет границы при фокусе */
+    box-shadow: 0 0 5px rgba(69, 160, 73, 0.5); /* Эффект подсветки */
+}
